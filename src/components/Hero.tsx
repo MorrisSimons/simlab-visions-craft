@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-purple-500/20 rounded-full animate-pulse delay-1000"></div>
       <div className="absolute top-1/2 right-1/4 w-12 h-12 bg-green-500/20 rounded-full animate-pulse delay-500"></div>
       
-      <div className="container mx-auto text-center relative z-10 max-w-4xl py-[25px]">
+      <div className="container mx-auto text-center relative z-10 max-w-4xl py-[25px] px-0">
         <div className="mb-8">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text text-transparent">
             SimLab
