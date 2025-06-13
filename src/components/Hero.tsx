@@ -1,10 +1,7 @@
-
 import { ArrowRight, Gamepad2, Palette, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 text-white overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center px-6 text-white overflow-hidden">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm"></div>
       
@@ -13,7 +10,7 @@ const Hero = () => {
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-purple-500/20 rounded-full animate-pulse delay-1000"></div>
       <div className="absolute top-1/2 right-1/4 w-12 h-12 bg-green-500/20 rounded-full animate-pulse delay-500"></div>
       
-      <div className="container mx-auto text-center relative z-10 max-w-4xl">
+      <div className="container mx-auto text-center relative z-10 max-w-4xl py-[25px]">
         <div className="mb-8">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text text-transparent">
             SimLab
@@ -47,16 +44,11 @@ const Hero = () => {
           </div>
         </div>
         
-        <Button 
-          size="lg" 
-          className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-        >
+        <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
           Explore My Work
           <ArrowRight className="ml-2 w-5 h-5" />
         </Button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
